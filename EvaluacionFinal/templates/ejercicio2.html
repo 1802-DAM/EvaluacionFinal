@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/css/ejercicio1.css">
+    <meta charset="UTF-8">
+    <title>Inicio de Sesion </title>
+
+</head>
+<body>
+<div class="container">
+    <h1>Login</h1>
+    <form method="post">
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" required>
+        <br>
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required>
+        <br>
+        <button type="submit">Iniciar sesión</button>
+    </form>
+
+    <div>
+    {% if mensaje %}
+        <p>{{ mensaje }}</p>
+    {% endif %}
+    </div>
+
+</div>
+</body>
+</html>
